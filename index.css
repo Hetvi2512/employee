@@ -1,0 +1,47 @@
+/* ---------Media Query---------- */
+body {
+  font-family: "Slabo 27px", serif;
+}
+.name {
+  font-weight: bold;
+}
+.empcontainer:hover {
+  box-shadow: 5px 6px 6px 2px #e9ecef;
+  transform: scale(1);
+}
+.shareicon {
+  display: flex;
+}
+.showmedia {
+  display: none;
+}
+.show:hover .showmedia {
+  display: block;
+  padding: 2px;
+}
+.show:hover .showicon {
+  display: none;
+}
+@media only screen and (min-width: 993px) {
+  .empcontainer {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  .empcontainer {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 577px) {
+  .empcontainer {
+    width: 86%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .empcontainer {
+    width: 90%;
+  }
+}
